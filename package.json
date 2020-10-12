@@ -1,0 +1,17 @@
+{
+  "name": "translater",
+  "version": "0.0.1",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node-dev src/cli.ts"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^6.1.0",
+    "crypto-js": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/crypto-js": "^4.0.1",
+    "@types/node": "^14.11.8"
+  }
+}
