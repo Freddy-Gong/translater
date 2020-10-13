@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import * as commander from 'commander'
 import { translate } from './main';
 
@@ -8,8 +9,8 @@ program
     .name('fy')
     .usage('<world>')
     .arguments('<world>')
-    .action((world) => {
-        console.log(world)
-        translate(world)
+    .action((...arg) => {
+        const text = arg[1].args.join(' ')
+        translate(text)
     })
 program.parse(process.argv);

@@ -1,14 +1,22 @@
 {
-  "name": "translater",
-  "version": "0.0.1",
-  "main": "index.js",
+  "name": "translater-freddy",
+  "version": "0.0.4",
+  "main": "dist/main.js",
+  "bin": {
+    "f": "dist/cli.js"
+  },
+  "files": [
+    "dist/**/*.js"
+  ],
   "scripts": {
     "dev": "ts-node-dev src/cli.ts"
   },
   "license": "MIT",
   "dependencies": {
     "commander": "^6.1.0",
-    "crypto-js": "^4.0.0"
+    "crypto-js": "^4.0.0",
+    "global": "^4.4.0",
+    "typescript": "^4.0.3"
   },
   "devDependencies": {
     "@types/crypto-js": "^4.0.1",
